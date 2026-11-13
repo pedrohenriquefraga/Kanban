@@ -20,6 +20,7 @@ class RegisterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
+        binding.progressBar.visibility = View.GONE
         return binding.root
     }
 
