@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kanban"
+    namespace = "com.pedrohenriquefragamarques.task"
 
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.kanban"
+        applicationId = "com.pedrohenriquefragamarques.task"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -26,9 +26,6 @@ android {
                 enable = false
             }
         }
-    }
-    viewBinding {
-        enable = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

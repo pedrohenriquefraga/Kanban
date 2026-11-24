@@ -34,7 +34,6 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Sair"
                 android:padding="12dp"
                 android:src="@drawable/ic_logout"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -47,5 +46,18 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="48dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/color_default"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/student_name"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
